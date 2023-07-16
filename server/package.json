@@ -1,0 +1,14 @@
+{
+  "name": "hiveup",
+  "version": "1.0.0",
+  "description": "Social media app with chatting functionalities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sanskar Jain",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
