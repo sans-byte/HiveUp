@@ -9,6 +9,7 @@
   "author": "Sanskar Jain",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.19.2",
     "nodemon": "^2.0.22"
   }
 }
