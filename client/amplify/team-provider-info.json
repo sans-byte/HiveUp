@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-hiveup-dev-231310-authRole",
-      "UnauthRoleArn": "arn:aws:iam::745183663545:role/amplify-hiveup-dev-231310-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::745183663545:role/amplify-hiveup-dev-231310-authRole",
+      "AuthRoleName": "amplify-hiveup-dev-105622-authRole",
+      "UnauthRoleArn": "arn:aws:iam::745183663545:role/amplify-hiveup-dev-105622-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::745183663545:role/amplify-hiveup-dev-105622-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-hiveup-dev-231310-deployment",
-      "UnauthRoleName": "amplify-hiveup-dev-231310-unauthRole",
-      "StackName": "amplify-hiveup-dev-231310",
-      "StackId": "arn:aws:cloudformation:us-east-1:745183663545:stack/amplify-hiveup-dev-231310/a9b19160-ed2a-11ee-a2cc-0e3261602197",
-      "AmplifyAppId": "d1434u71idwr5b"
+      "DeploymentBucketName": "amplify-hiveup-dev-105622-deployment",
+      "UnauthRoleName": "amplify-hiveup-dev-105622-unauthRole",
+      "StackName": "amplify-hiveup-dev-105622",
+      "StackId": "arn:aws:cloudformation:us-east-1:745183663545:stack/amplify-hiveup-dev-105622/0e6a7500-ee56-11ee-85d3-1237d29d5859",
+      "AmplifyAppId": "d16fs1acs09yh7"
     },
     "categories": {
       "auth": {
-        "hiveupf0146024": {}
+        "hiveupc3e54330": {}
       }
     }
   }

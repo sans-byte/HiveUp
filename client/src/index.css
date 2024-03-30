@@ -2,6 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #ffffffff;
+  --button-primary: #ce6a85ff;
+  --button-secondary: #7a9e7eff;
+  --gray: #546a7bff;
+  --black: #040404ff;
+  /* Secondary colors */
+  --secondary-color: #6c757d;
+  --secondary-dark: #21232d;
+  --secondary-light: #b0b6bd;
+
+  /* Other colors */
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+}
+
 .amplify-button--primary {
-  background-color: #047d95;
+  background-color: var(--black);
+}
+/* Example usage */
+body {
+  background-color: var(--primary-color);
+}
+
+[data-amplify-authenticator] {
+  --amplify-components-authenticator-router-box-shadow: 0 0 16px
+    var(--amplify-colors-overlay-10);
+  --amplify-components-authenticator-router-border-width: 0;
+  --amplify-components-authenticator-form-padding: var(--amplify-space-medium)
+    var(--amplify-space-xl) var(--amplify-space-xl);
+  --amplify-components-button-primary-background-color: var(
+    --amplify-colors-neutral-100
+  );
+  --amplify-components-fieldcontrol-focus-box-shadow: 0 0 0 2px var(--black);
+  --amplify-components-tabs-item-active-border-color: var(
+    --amplify-colors-neutral-100
+  );
+  --amplify-components-tabs-item-color: var(--amplify-colors-neutral-80);
+  --amplify-components-tabs-item-active-color: var(--amplify-colors-purple-100);
+  --amplify-components-button-link-color: var(--amplify-colors-purple-80);
 }
