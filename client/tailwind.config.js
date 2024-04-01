@@ -5,6 +5,8 @@ export default {
     extend: {
       colors: {
         secondary: "#21232d",
+        buttonPrimary: "#ce6a85ff",
+        buttonSecondary: "#7a9e7eff",
       },
     },
   },

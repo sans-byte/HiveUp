@@ -14,8 +14,7 @@ import {
 import "@aws-amplify/ui-react/styles.css";
 import awsExports from "../aws-exports";
 import logo from "../assets/logo.png";
-import { signOut } from "aws-amplify/auth";
-import LandingPage from "./LandingPage";
+import UserDetailsCheck from "../components/user/UserDetailsCheck";
 
 Amplify.configure(awsExports);
 
@@ -189,7 +188,7 @@ function Login() {
         formFields={formFields}
         socialProviders={["google"]}
       >
-        <LandingPage signOut={signOut} />
+        <UserDetailsCheck />
       </Authenticator>
     </div>
   );

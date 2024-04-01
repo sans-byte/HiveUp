@@ -10,9 +10,21 @@ const userSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    dateOfBirth: {
+      type: Date,
+      required: true,
+    },
+    gender: {
+      type: String,
+    },
+    pronouns: {
+      type: String,
+    },
+    phoneNumber: {
+      type: Number,
+    },
     profilePic: {
       type: String,
-      required: true,
     },
   },
   {
@@ -20,4 +32,4 @@ const userSchema = mongoose.Schema(
   }
 );
 
-model.exports = mongoose.model("users", userSchema);
+module.exports = mongoose.model("users", userSchema);
