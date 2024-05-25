@@ -20,6 +20,7 @@ function UserRegister() {
   const [gender, setGender] = useState("");
   const [pronouns, setPronouns] = useState("");
   const [image, setImage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleNextClick = () => {
     setTogglePage((pre) => pre + 1);
@@ -29,17 +30,22 @@ function UserRegister() {
   };
 
   const handleFormSubmit = async () => {
-    const formData = new FormData();
-    console.log(user);
-    user && formData.append("email", user.email);
-    user && formData.append("name", user.name);
-    image && formData.append("profilePic", image);
-    gender && formData.append("gender", gender);
-    pronouns && formData.append("pronouns", pronouns);
-    birthdate && formData.append("dateOfBirth", birthdate);
-    console.log(formData);
-    const res = await registerUser(formData);
-    console.log(res);
+    try {
+      setLoading(true);
+      const formData = new FormData();
+      user && formData.append("email", user.email);
+      user && formData.append("name", user.name);
+      image && formData.append("profilePic", image);
+      gender && formData.append("gender", gender);
+      pronouns && formData.append("pronouns", pronouns);
+      birthdate && formData.append("dateOfBirth", birthdate);
+      const res = await registerUser(formData);
+      console.log(res);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
   };
 
   return (
@@ -146,7 +152,6 @@ function UserRegister() {
                 onClick={handleFormSubmit}
               >
                 Get Started
-                <FaArrowAltCircleRight className="text-xl" />
               </Button>
               <Button
                 type="secondary"

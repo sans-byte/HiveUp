@@ -5,7 +5,7 @@ function FullScreenLoading() {
   return (
     <div className="w-screen h-screen ">
       <div className="w-full h-full flex justify-center items-center bg-secondary">
-        <img src={logo} alt="HiveUp logo" width={100} height={100} />
+        <img src={logo} alt="HiveUp logo" width={200} height={200} />
       </div>
     </div>
   );
